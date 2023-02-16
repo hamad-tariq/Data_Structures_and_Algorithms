@@ -1,0 +1,30 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int arr[10];
+    int search, i, j, in;
+
+    cout << "Enter values: " << endl;
+    for (i = 0; i < 10; i++) {
+        cin >> arr[i];
+    }
+    cout << "Enter value to search ";
+    cin >> search;
+    for (j = 0; j < 10; j++) {
+        if (arr[j] == search) {
+            in = j;
+            break;
+        }
+    }
+    if (arr[j] == search) {
+        cout << "Access Granted";
+    }
+    else {
+        cout << "Access Denied";
+    }
+    return 0;
+}
+
